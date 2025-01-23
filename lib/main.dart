@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 void main () {
     final Map object = {
     1:23,
@@ -86,22 +88,81 @@ final List massive = [
     [1, 2, 3, 4, 5, 6],
 ];
 
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][0]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][1]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][2]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][3]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][4]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][5]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[1]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][0]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][1]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][2]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][3]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[3]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][0]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][1]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][2]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][3]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][4]}');
-print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][5]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][0]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][1]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][2]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][3]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][4]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[0][5]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[1]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][0]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][1]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][2]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[2][3]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[3]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][0]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][1]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][2]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][3]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][4]}');
+// print('Я Даня и я обещаю всегда правильно выводить данные ${massive[4][5]}');
+
+
+
 }
+ 
+
+
+ void two () {
+    runApp(MyApp());
+ }
+class MyApp extends StatelessWidget {
+    @override
+    Widget build(BuildContext context) {
+        return MaterialApp(
+            home: ListView.builder(
+                itemBuilder: (BuildContext context, int index) {
+                    return Text('Моя семья : }');
+                }
+                ),
+        );
+    }
+   
+}
+
+void tree () {
+    runApp(YourApp());
+}
+
+class YourApp extends StatelessWidget {
+    @override
+    Widget build(BuildContext context) {
+        return MaterialApp(
+            home: ListView.builder(
+                itemBuilder: (BuildContext context, int index) {
+                    return Text('Моя семья : }');
+                }
+                ),
+        );
+    }
+}
+
+void four () {
+    runApp(HisApp());
+}
+
+class HisApp extends StatelessWidget {
+    @override
+    Widget build(BuildContext context) {
+        return MaterialApp(
+            home: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                itemBuilder: (BuildContext context,int index) {
+                     return Text('Моя семья : }');
+                }
+            ),
+        );
+    }
+}
+
+
